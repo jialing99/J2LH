@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Not finish yet</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/0899b2402d.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Progress bar-->
+	<div class="progress-container">
+    		<div class="progress-bar" id="myBar"></div>
+  		</div>
+<!-- Navigation Bar -->
+	<div class="navbar" id="navbar">
+	<a href="#" class="active"><img src="Assets/banner/Asset%208.png" class="logo">
+ 	</a>
+	<a class="active"><h4 class="J2lh"s>Jia Ling Lin Huang</h4></a>
+  	<a href="home.html"><h4>Home</h4></a>
+	<a href="work.html"><h4>Works</h4></a>
+	<a href="about.html"><h4>About</h4></a>
+	<a href="#"><h4>Contact</h4></a>
+	<a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+   		<img src="Assets/Icons/menu_black_36dp.svg" class="ham">
+ 	</a>
+</div>
+<!--Table-->
+<div class="row-cat1">
+	<div class="c100">
+		<h1 style="color: black">Web and Mobile devepment and Design</h1>
+	</div>	
+	<div class="c33-c">
+		<div class="content1">
+			<img src="Assets/Web-Mobile/MTAG/Artboard%202.jpg" class="img-content">
+			<h4>MTAG: Metropolitan Transit Art Gallery Club</h4>
+		</div>
+	</div>
+	<div class="c33-c">
+		<div class="content1">
+			<img src="Assets/Web-Mobile/C-Hat/Artboard%202.jpg" class="img-content">
+			<h4>C-Hat</h4>
+		</div>
+	</div>
+		
+	<div class="c33-c">
+		<div class="content1">
+			<img src="Assets/Web-Mobile/Craigslist/Craigslist.png" class="img-content">
+			<h4>Craigslist</h4>
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+<div class="row">
+	<div class="c100">
+	<br><br>
+		<img src="Assets/banner/Asset%208.png" class="logo">
+  		<h2>Jia Ling Lin Huang</h2>
+  		<h7>All rights reserved</h7>
+  		<br><br>
+		<a href="#" class="icon-socialmedia"><i class="fab fa-twitter"></i></a>
+		<a href="#" class="icon-socialmedia"><i class="fab fa-instagram"></i></a>
+		<a href="#" class="icon-socialmedia"><i class="fab fa-youtube"></i></a>
+		<a href="#" class="icon-socialmedia"><i class="fab fa-linkedin"></i></a>
+		<a href="#" class="icon-socialmedia"><i class="fab fa-behance"></i></a>
+  		<br><br><br>
+	</div>
+</div>
+
+<script>
+	function myFunction() {
+		var x = document.getElementById("navbar");
+  		if (x.className === "navbar") {
+			x.className += " responsive";
+  		} else {
+			x.className = "navbar";
+  		}
+	}
+	
+		window.onscroll = function() {myBar()};
+
+		function myBar() {
+  		var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  		var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		var scrolled = (winScroll / height) * 100;
+  		document.getElementById("myBar").style.width = scrolled + "%";
+		}	
+</script>
+</body>
+</html>
